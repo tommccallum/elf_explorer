@@ -1,0 +1,13 @@
+SHF_WRITE 	0x1 data that is writable during execution
+SHF_ALLOC 	0x2 this section occupies memory during execution, excludes control sections
+SHF_EXECINSTR 	0x4 contains executable instructions
+SHF_MERGE 	0x10    data is merged in this section to avoid duplication
+SHF_STRINGS 	0x20    contains null terminated strings, size of each character is in sh_entsize
+SHF_INFO_LINK 	0x40    points to the section header table index
+SHF_LINK_ORDER 	0x80    points to a section that indicates section order
+SHF_OS_NONCONFORMING 	0x100   points to specific OS processing rules
+SHF_GROUP 	0x200   set if section is part of a group
+SHF_TLS 	0x400   thread local storage, so each distinct instance has a copy of this data
+SHF_COMPRESSED 	0x800   section contains compressed data
+SHF_MASKOS 	0x0ff00000  masks off os specific semantics
+SHF_MASKPROC 	0xf0000000  masks off processor specific semantics

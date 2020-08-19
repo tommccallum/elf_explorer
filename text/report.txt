@@ -1,0 +1,157 @@
+
+
+Reading 64-bit executable 'helloworld.out'
+Reading symbol table '.symtab'
+Reading string table '.strtab'
+Reading string table '.shstrtab'
+[INFO] filesize: 8944 in: 8944 capacity: 8944 bytes
+64-bit ELF Header
+-----------------
+[MAGIC] 7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+Class: 0x2
+Data Encoding: 0x1
+Version: 0x1
+OS ABI: 0x0
+ABI Version: 0x0
+Type: Executable (ET_EXEC) (Dec: 2 0x2)
+Machine: EM_X86_64 (Dec: 62 Hex: 0x3e)
+Version: 1 0x1
+Entry Address: 4198400 0x401000
+Program header offset: 64 0x40
+Section header offset: 8560 0x2170
+Flags: 0 0x0
+Elf header size: 64 0x40
+Program header entry size: 56 0x38
+Program header entry count: 2 0x2
+Section header entry size: 64 0x40
+Section header entry count: 6 0x6
+Index of string table with section names in: 5 0x5
+[0] SHT_NULL Name: 
+  flags:0x0 
+  mem_addr:0x0 offset:0x0 size:0x0 
+  link:0x0 info:0x0
+  addralign:0x0 entry size:0x0 
+  ** Empty section table detail **
+[1] SHT_PROGBITS Name: .text
+  flags:0x401000 
+  mem_addr:0x401000 offset:0x1000 size:0x27 
+  link:0x0 info:0x0
+  addralign:0x10 entry size:0x0 
+  ** Empty section table detail **
+[2] SHT_PROGBITS Name: .data
+  flags:0x402000 WRITE ALLOC EXEC 
+  mem_addr:0x402000 offset:0x2000 size:0xd 
+  link:0x0 info:0x0
+  addralign:0x4 entry size:0x0 
+  ** Empty section table detail **
+[3] SHT_SYMTAB Name: .symtab
+  flags:0x0 
+  mem_addr:0x0 offset:0x2010 size:0xf0 
+  link:0x4 info:0x6
+    String table: 4
+    Table index of last local symbol+1: 6
+  addralign:0x8 entry size:0x18 
+
+   [SymbolTable] Entries: 10
+     [] value:0x0 VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x0 Bind: STB_LOCAL Type: STT_NOTYPE
+       visibility: STV_DEFAULT (0x0)
+       section: 0 SHN_UNDEF SHN_XINDEX: false
+     [] value:0x401000 VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x3 Bind: STB_LOCAL Type: STT_SECTION
+       visibility: STV_DEFAULT (0x0)
+       section: 1 INDEX SHN_XINDEX: false
+     [] value:0x402000 VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x3 Bind: STB_LOCAL Type: STT_SECTION
+       visibility: STV_DEFAULT (0x0)
+       section: 2 INDEX SHN_XINDEX: false
+     [helloworld.asm] value:0x0 VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x4 Bind: STB_LOCAL Type: STT_FILE
+       visibility: STV_DEFAULT (0x0)
+       section: 65521 SHN_ABS SHN_XINDEX: false
+     [hello_world] value:0x402000 VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x0 Bind: STB_LOCAL Type: STT_NOTYPE
+       visibility: STV_DEFAULT (0x0)
+       section: 2 INDEX SHN_XINDEX: false
+     [hello_world_len] value:0xd VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x0 Bind: STB_LOCAL Type: STT_NOTYPE
+       visibility: STV_DEFAULT (0x0)
+       section: 65521 SHN_ABS SHN_XINDEX: false
+     [_start] value:0x401000 VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x10 Bind: STB_GLOBAL Type: STT_NOTYPE
+       visibility: STV_DEFAULT (0x0)
+       section: 1 INDEX SHN_XINDEX: false
+     [__bss_start] value:0x40200d VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x10 Bind: STB_GLOBAL Type: STT_NOTYPE
+       visibility: STV_DEFAULT (0x0)
+       section: 2 INDEX SHN_XINDEX: false
+     [_edata] value:0x40200d VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x10 Bind: STB_GLOBAL Type: STT_NOTYPE
+       visibility: STV_DEFAULT (0x0)
+       section: 2 INDEX SHN_XINDEX: false
+     [_end] value:0x402010 VIRTUAL_ADDRESS 
+       size: 0x0
+       info: 0x10 Bind: STB_GLOBAL Type: STT_NOTYPE
+       visibility: STV_DEFAULT (0x0)
+       section: 2 INDEX SHN_XINDEX: false
+
+[4] SHT_STRTAB Name: .strtab
+  flags:0x0 
+  mem_addr:0x0 offset:0x2100 size:0x44 
+  link:0x0 info:0x0
+  addralign:0x1 entry size:0x0 
+
+   [StringTable] Entries: 6
+     helloworld.asm
+     hello_world
+     hello_world_len
+     __bss_start
+     _edata
+     _end
+
+[5] SHT_STRTAB Name: .shstrtab
+  flags:0x0 
+  mem_addr:0x0 offset:0x2144 size:0x27 
+  link:0x0 info:0x0
+  addralign:0x1 entry size:0x0 
+
+   [StringTable] Entries: 5
+     .symtab
+     .strtab
+     .shstrtab
+     .text
+     .data
+
+Start address: 0x00401000
+[0] Program Header
+Type: PT_LOAD
+Offset: 0x1000
+Virtual Address: 0x401000
+Physical Address: 0x401000
+File size: 0x27
+Memory size: 0x27
+Flags: 0x5
+READ EXECUTE
+Alignment: 0x1000
+
+[1] Program Header
+Type: PT_LOAD
+Offset: 0x2000
+Virtual Address: 0x402000
+Physical Address: 0x402000
+File size: 0xd
+Memory size: 0xd
+Flags: 0x6
+READ WRITE
+Alignment: 0x1000
+
+
